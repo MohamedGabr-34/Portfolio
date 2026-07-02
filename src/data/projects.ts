@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "youtube-clone",
     title: "YouTube Clone",
     description:
-      "A YouTube-style video browsing interface with search, categories, channels, and a full video page. Consumes the RapidAPI YouTube API to load real video data with dynamic routing between pages.",
-    techStack: ["React", "JavaScript", "CSS", "RapidAPI"],
+      "A YouTube-style video browsing application built with React and the YouTube Data API v3. Features a dynamic home feed with category filtering, full-text search with results page, channel pages showing subscriber counts and uploads, video detail pages with view/like counts, and playlist browsing. Built with React Router for seamless navigation between pages and MUI for the UI components.",
+    techStack: ["React", "JavaScript", "CSS", "YouTube Data API v3"],
     liveDemo: "https://mohamedgabr-34.github.io/youtube-clone/",
     github: "https://github.com/MohamedGabr-34/youtube-clone",
     thumbnail: "/images/projects/YT/Main.png",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     id: "lms-frontend",
     title: "LMS Frontend",
     description:
-      "A responsive Learning Management System frontend inspired by Udemy. Features course browsing, authentication via Clerk, and a scalable component structure ready for backend integration.",
+      "A full-featured Learning Management System frontend inspired by Udemy, built with React, TypeScript, and Tailwind CSS. Features a course browsing page, detailed course view, student progress tracking, and a complete instructor dashboard with the ability to add and manage courses. Authentication is handled via Clerk. The architecture is modular and scalable, ready for backend integration.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Clerk", "Vite"],
     liveDemo: "https://mohamedgabr-34.github.io/LMS/",
     github: "https://github.com/MohamedGabr-34/LMS",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     id: "doctor-appointments",
     title: "Doctor Appointments",
     description:
-      "A responsive doctor appointment booking application that allows patients to browse doctors, view profiles, and schedule appointments through an intuitive interface. Built with a scalable architecture ready for backend integration and real-time appointment management.",
+      "A responsive doctor appointment booking application built with React and Tailwind CSS. Allows patients to browse doctors by specialty, view detailed doctor profiles, book appointments, manage their bookings, and update their personal profile. Features a clean multi-page layout with intuitive navigation, built with a modular component structure ready for backend and authentication integration.",
     techStack: ["React", "JavaScript", "Tailwind CSS", "Vite"],
     liveDemo: "https://mohamedgabr-34.github.io/DoctorAppiontments/",
     github: "https://github.com/MohamedGabr-34/DoctorAppiontments",
