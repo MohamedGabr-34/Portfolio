@@ -1,5 +1,4 @@
 import { NavLink, useParams } from "react-router-dom";
-import type { Project } from "../types/projects";
 import { projects } from "../data/projects";
 import { useEffect, useRef, useState } from "react";
 import { HiExternalLink, HiX } from "react-icons/hi";

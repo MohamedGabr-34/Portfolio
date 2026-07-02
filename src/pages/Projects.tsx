@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../data/projects";
 import { CiFilter } from "react-icons/ci";
-import type { Project } from "../types/projects";
 import { ProjectCard } from "../components/ProjectCard";
 import { HiX } from "react-icons/hi";
 import clsx from "clsx";
