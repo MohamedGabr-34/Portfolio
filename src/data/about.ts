@@ -29,8 +29,9 @@ export const experiences: Experience[] = [
 ];
 
 export const education: Education = {
-  degree: "Bachelor of Science in Computer & Artificial Intelligence",
-  institution: "El Mansoura University, Egypt",
+  degree: "Bachelor of Science in Bioinformatics",
+  institution:
+    "Faculty of Computers and Information, Mansoura University, Egypt",
   period: "Feb 2019 – Jul 2023",
   linkedIn: "https://linkedin.com/in/m-gabr",
 };
