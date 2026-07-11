@@ -15,7 +15,7 @@ export type Education = {
 
 export type Certificate = {
   name: string;
-  provider: string;
   issuer: string;
+  category: "frontend" | "networking" | "cybersecurity" | "systems";
   link: string;
 };

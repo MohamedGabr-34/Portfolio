@@ -35,28 +35,137 @@ export const education: Education = {
   linkedIn: "https://linkedin.com/in/m-gabr",
 };
 export const certificates: Certificate[] = [
+  // Frontend
+  {
+    name: "React Basics",
+    issuer: "Meta",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
   {
     name: "Web Development Professional",
-    provider: "Udacity",
     issuer: "Udacity",
-    link: "www.linkedin.com/in/m-gabr",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
   },
   {
     name: "Full Stack Web Developer Track",
-    provider: "Udacity",
     issuer: "Udacity",
-    link: "www.linkedin.com/in/m-gabr",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Front-End Web UI Frameworks: Bootstrap 4",
+    issuer: "HKUST",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Front-End JavaScript Frameworks: Angular",
+    issuer: "HKUST",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Web Development",
+    issuer: "IBM",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "HTML & CSS",
+    issuer: "IBM",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "JavaScript",
+    issuer: "IBM",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Create Your Own Web Page",
+    issuer: "IBM",
+    category: "frontend",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+
+  // Networking
+  {
+    name: "Networking Basics",
+    issuer: "Cisco",
+    category: "networking",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Networking Devices and Initial Configuration",
+    issuer: "Cisco",
+    category: "networking",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "The Bits and Bytes of Computer Networking",
+    issuer: "Google",
+    category: "networking",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+
+  // Cybersecurity
+  {
+    name: "Introduction to Cybersecurity",
+    issuer: "Cisco",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Endpoint Security",
+    issuer: "Cisco",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Cybersecurity Intro",
+    issuer: "IBM",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Identify and Investigate Cybersecurity Threats",
+    issuer: "IBM",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Cybersecurity Compliance Framework",
+    issuer: "IBM",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Introduction to Cybersecurity Tools & Cyberattacks",
+    issuer: "IBM",
+    category: "cybersecurity",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+
+  // Systems
+  {
+    name: "Technical Support Fundamentals",
+    issuer: "Google",
+    category: "systems",
+    link: "https://linkedin.com/in/m-gabr",
+  },
+  {
+    name: "Operating Systems: Overview, Administration, and Security",
+    issuer: "IBM",
+    category: "systems",
+    link: "https://linkedin.com/in/m-gabr",
   },
   {
     name: "Data Analysis",
-    provider: "Udacity",
     issuer: "Udacity",
-    link: "www.linkedin.com/in/m-gabr",
-  },
-  {
-    name: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
-    provider: "Coursera",
-    issuer: "The Hong Kong University of Science and Technology",
-    link: "www.linkedin.com/in/m-gabr",
+    category: "systems",
+    link: "https://linkedin.com/in/m-gabr",
   },
 ];

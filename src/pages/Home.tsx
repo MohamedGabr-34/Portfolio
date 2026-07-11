@@ -7,7 +7,12 @@ import { certificates, experiences } from "../data/about";
 import { education } from "../data/about";
 import { FaLinkedin } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import clsx from "clsx";
+import { useState } from "react";
 export const Home = () => {
+  const [activeTab, setActiveTab] = useState<
+    "frontend" | "networking" | "cybersecurity" | "systems"
+  >("frontend");
   return (
     <>
       <Hero />
@@ -135,18 +140,63 @@ export const Home = () => {
 
           <div className="bg-bg-card border border-border rounded-xl p-6 flex flex-col gap-6">
             {/* Certificates */}
-            <div className="flex flex-col gap-3">
+            <div className="bg-bg-card border border-border rounded-xl p-6 flex flex-col gap-4">
               <p className="text-text-secondary text-xs font-medium uppercase tracking-wider">
                 Certificates
               </p>
-              {certificates.map((cert) => (
-                <div key={cert.name} className="flex flex-col gap-1">
-                  <p className="text-text-primary text-sm font-medium">
-                    {cert.name}
-                  </p>
-                  <p className="text-text-secondary text-xs">{cert.issuer}</p>
-                </div>
-              ))}
+
+              {/* Tabs */}
+              <div className="flex gap-2 flex-wrap">
+                {(
+                  [
+                    "frontend",
+                    "networking",
+                    "cybersecurity",
+                    "systems",
+                  ] as const
+                ).map((tab) => (
+                  <button
+                    key={tab}
+                    onClick={() => setActiveTab(tab)}
+                    className={clsx(
+                      "px-3 py-1 rounded-full text-xs font-medium transition-colors duration-200 capitalize",
+                      activeTab === tab
+                        ? "bg-accent text-white"
+                        : "border border-border text-text-secondary hover:border-accent hover:text-accent",
+                    )}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-col gap-3">
+                {certificates
+                  .filter((c) => c.category === activeTab)
+                  .map((cert) => (
+                    <div
+                      key={cert.name}
+                      className="flex flex-col gap-0.5 pl-2 border-l border-accent"
+                    >
+                      <p className="text-text-primary text-xs font-medium">
+                        {cert.name}
+                      </p>
+                      <p className="text-text-secondary text-xs">
+                        {cert.issuer}
+                      </p>
+                    </div>
+                  ))}
+              </div>
+
+              <a
+                href={education.linkedIn}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-accent hover:underline text-sm mt-auto pt-2 border-t border-border"
+              >
+                <FaLinkedin /> View on LinkedIn
+              </a>
             </div>
 
             {/* LinkedIn link */}
